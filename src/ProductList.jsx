@@ -245,7 +245,7 @@ const handlePlantsClick = (e) => {
     setShowCart(false); // Hide the cart when navigating to About Us
 };
 
-//const dispatch = useDispatch();
+const dispatch = useDispatch();
 const [addedToCart, setAddedToCart] = useState({});
 
 const handleAddToCart = (product) => {
