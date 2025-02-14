@@ -245,11 +245,11 @@ const handlePlantsClick = (e) => {
     setShowCart(false); // Hide the cart when navigating to About Us
 };
 
-const dispatch = useDispatch();
+//const dispatch = useDispatch();
 const [addedToCart, setAddedToCart] = useState({});
 
 const handleAddToCart = (product) => {
-    dispatch(addItem(product));
+    CartItem.dispatch(addItem(product));
     setAddedToCart((prevState) => ({
         ...prevState,
         [product.name]: true, // Set the product name as key and value as true to indicate it's added to cart
